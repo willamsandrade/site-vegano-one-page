@@ -1,163 +1,230 @@
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-}
-input, textarea {
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-}
-header {
-    width: 100%;
-    height: 100vh;
-    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
-    background-position: left;
-    background-size: cover;
-}
-nav {
-    background-color: white;
-    width: 100%;
-    height: 77px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 28px;
-    box-sizing: border-box;
-    position: fixed;
-    z-index: 10;
-}
-#logo {
-    width: 40px;
-}
-.menu-item {
-    color: black;
-    font-weight: 600;
-    font-size: 14px;
-    margin-right: 24px;
-    cursor: pointer;
-}
-.dropdown-wrapper {
-    display: inline-block;
-    position: relative;
-}
-.dropdown-wrapper:hover .dropdown {
-    display: block;
-}
-.dropdown {
-    width: 150px;
-    border-top: 2px solid rgb(170, 210, 54);
-    padding: 20px;
-    position: absolute;
-    right: 24px;
-    background-color: white;
-    box-shadow: 0 2px 5px #ccc;
-    display: none;
-}
-.dropdown a {
-    text-decoration: none;
-    display: block;
-    border-bottom: 1px solid #ccc;
-    padding: 4px;
-    cursor: pointer;
-}
-.dropdown a:last-of-type {
-    border: 0;
-}
-.menu-item i {
-    padding-left: 4px;
-}
-.primary-button {
-    font-size: 12px;
-    font-weight: 600;
-    color: white;
-    background-color: rgb(170, 210, 54);
-    padding: 9px 34px;
-    text-transform: uppercase;
-    border: 0;
-    border-radius: 4px;
-    margin-right: 16px;
-    cursor: pointer;
-}
-
-
-
-#landing-section {
-    width: 100%;
-    height: 100vh;
-}
-
-
-
-#main-text-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#main-text-wrapper h1 {
-    width: 100%;
-    max-width: 1100px;
-    font-size: 44px;
-    font-weight: 600;
-    letter-spacing: 8.8px;
-    line-height: 1.2;
-    text-align: center;
-    margin: 0;
-
-}
-#main-text-wrapper p {
-    width: 100%;
-    max-width: 1100px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    font-weight: 400;
-    color: #8b8b99;
-    text-align: center;
-    padding-top: 32px;
-}
-
-/*  SECTION STYLES START */
-#steps-section {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-}
-.step-item {
-    width: 25%;
-    padding: 112px 48px;
-    text-align: center;
-    color: white;
-    box-sizing: border-box;
-}
-.step-item i {
-    font-size: 96px;
-    transition: all 0.3s;
-}
-.step-item:hover i{
-    transform: scale(1.1, 1.1);
-}
-.step-item h3 {
-    font-weight: 600;
-    font-size: 24px;
-}
-.step-item p {
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    line-height: 1.6;
-    margin-top: 0;
-}
-#first-step {
-    background-color: #5acda6;
-}
-#second-step {
-    background-color: #91ac41;
-}
-#third-step {
-    background-color: #e4b476;
-}
-#fourth-step {
-    background-color: #f69dad;
-}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+input, textarea {
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+/*  CABEÇALHO E NAV */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-position: left;
+    background-size: cover;
+}
+nav {
+    background-color: white;
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 28px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+}
+#logo {
+    width: 40px;
+}
+.menu-item {
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.dropdown-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown-wrapper:hover .dropdown {
+    display: block;
+}
+.dropdown {
+    width: 150px;
+    border-top: 2px solid rgb(170, 210, 54);
+    padding: 20px;
+    position: absolute;
+    right: 24px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    display: none;
+}
+.dropdown a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+}
+.dropdown a:last-of-type {
+    border: 0;
+}
+.menu-item i {
+    padding-left: 4px;
+}
+.primary-button {
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(170, 210, 54);
+    padding: 9px 34px;
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+#landing-section {
+    width: 100%;
+    height: 100vh;
+}
+#main-text-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#main-text-wrapper h1 {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+#main-text-wrapper p {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+}
+/*  FIM CABEÇALHO E NAV */
+
+
+/*  SECTION STYLES START */
+#steps-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+.step-item {
+    width: 25%;
+    padding: 112px 48px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+}
+
+.step-item i {
+    font-size: 96px;
+    transition: all 0.3s;
+}
+.step-item:hover i{
+    transform: scale(1.1, 1.1);
+}
+.step-item h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+#first-step {
+    background-color: #5acda6;
+}
+#second-step {
+    background-color: #91ac41;
+}
+#third-step {
+    background-color: #e4b476;
+}
+#fourth-step {
+    background-color: #f69dad;
+}
 /*  SECTION STYLES END */
+
+/* STORE SECTION STYLES START */
+#store-section {
+    width: 100%;
+    background-color: #f7eee2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+}
+#fresh-food-heading {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+#store-section > h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 8px;
+}
+#store-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+#store-items-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+.store-item {
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+.icon-wrapper {
+    display: inline-block;
+    background-color: #e3b375;   
+    border-radius: 50%;
+    padding: 40px;
+    color: white;
+    transition: all 0.3s;
+}
+.store-item:hover .icon-wrapper{
+    transform: scale(1.1, 1.1);
+}
+.icon-wrapper i {
+    font-size: 60px;
+}
+.store-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.store-item p {
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+}
+/* STORE SECTION STYLES ENDS */
