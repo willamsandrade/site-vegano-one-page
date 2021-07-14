@@ -306,3 +306,72 @@ nav {
     margin: 0;
 }
 /* TESTIMONIALS SECTION STYLES END */
+
+/* FOLLOW US SECTION STYLES START */
+#follow-section {
+    display: flex;
+    justify-content: stretch;
+}
+
+#left-section {
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+#left-section img {
+    width: 100%;
+}
+#right-section {
+    width: 33.33%;
+    margin: 0;
+    display: inline-block;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-position: left;
+    background-size: cover;
+}
+#right-section #text-wrapper {
+    margin: 115px;
+}
+#right-section #text-wrapper h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+#right-section #text-wrapper p {
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+#subscribe-email {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+}
+#subscribe-btn {
+    background-color: #f69dad;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+}
+#subscribe-btn:hover {
+    color: #f69dad;
+    border: 1px solid #f69dad;
+    background-color: transparent;
+}
+/* FOLLOW US SECTION STYLES END */
