@@ -307,7 +307,7 @@ nav {
 }
 /* TESTIMONIALS SECTION STYLES END */
 
-/* FOLLOW US SECTION STYLES START */
+/* FOLLOW US SECTION STYLES START */  
 #follow-section {
     display: flex;
     justify-content: stretch;
@@ -375,3 +375,60 @@ nav {
     background-color: transparent;
 }
 /* FOLLOW US SECTION STYLES END */
+
+/* STATS SECTION STYLES START */
+#stats-section {
+    width: 100%;
+    background-color: #f6fcfa;
+}
+#stats-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    padding: 100px 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+}
+.stats-item {
+    width: 25%;
+    padding: 0 64px;
+}
+.stats-item h3 {
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+.stats-item p {
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+/* STATS SECTION STYLES END */
+
+/* VIDEO SECTION STYLES START */
+#video-section h3 {
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+#video-section > div {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+#line-separator {
+    width: 96px;
+    display: inline-block;
+    height: 1px;
+    background-color: #e4b476;
+    margin-bottom: 36px;
+}
+#video-section iframe {
+    width: 100%;
+    height: 425px;
+}
+/* VIDEO SECTION STYLES END */
